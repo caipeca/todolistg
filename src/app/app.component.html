@@ -1,13 +1,28 @@
-<div>
-  <div>
-    <form>
-        <input type="text">
-        <button></button>
+<div class="principal">
+  <div class="principalCaixaTexto">
+    <form #registerForm="ngForm" (ngSubmit)="onRegisterTarefa(registerForm.value)">
+        <input type="text" ngModel #nomeTarefa="ngModel" name="nomeTarefa">
+        <button type="submit">Nova Tarefa</button>
     </form>
   </div>
 
-  <div>
-
+  <div class="principalTabela">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tarefa</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let estado of estados">
+          <td>{{estado.identificador}}</td>
+          <td>{{estado.nomeTarefa}}</td>
+          <td>{{estado.estadoTarefa}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 </div>
