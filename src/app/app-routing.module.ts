@@ -9,14 +9,10 @@ const routes: Routes = [
     path:'login', component: LoginComponent
   },
   {
-    path:'',
-    component:NavComponent, children:[
-      {
-        path:'home',
-        component:HomeComponent
-      }
-    ]
-  },{
+    path:'manutenca',
+    component: NavComponent, children:[{path:'home', component: HomeComponent}]
+  },
+  {
     path:'',redirectTo:'/login', pathMatch:'full'
   }
 ];

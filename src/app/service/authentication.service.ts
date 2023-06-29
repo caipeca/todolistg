@@ -66,6 +66,7 @@ export class AuthenticationService {
       this.logOut();
       return false;
     }
+    return false;
   }
 
 }
