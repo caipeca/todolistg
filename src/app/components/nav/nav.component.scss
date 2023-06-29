@@ -1,0 +1,30 @@
+.side-container {
+  height: 100%;
+
+  .sidenav {
+    width: 13rem;
+    background-color:#521187;
+    .nav-list{
+      color: white;
+      a{
+        text-decoration: none;
+        color: white;
+        i{
+          margin-right: .6rem;
+        }
+      }
+
+      .menu-side-nav{color: white;}
+      .material-icons{
+        color: white;
+      }
+    }
+
+  }
+  .sidenav-content{
+    .menu{
+      margin: 1rem 0 0 1rem;
+    }
+  }
+
+}
